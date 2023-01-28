@@ -1,0 +1,101 @@
+.price {
+	padding: 62px 0;
+
+	@include tablet {
+		padding: 40px 0;
+	}
+
+	@include mobile {
+		padding: 32px 0;
+	}
+
+	&__title {
+		font-weight: 400;
+		font-size: 40px;
+		text-transform: uppercase;
+		margin-bottom: 16px;
+
+		@include tablet {
+			font-size: 32px;
+			margin-bottom: 16px;
+		}
+		@include mobile {
+			font-size: 20px;
+			margin-bottom: 8px;
+		}
+	}
+
+	&__tagline {
+		margin-bottom: 40px;
+
+		@include mobile {
+			font-size: 12px;
+			margin-bottom: 8px;
+		}
+	}
+
+	&__wrapper-content {
+		display: flex;
+		gap: 32px;
+
+		&::before {
+			content: '';
+			flex-basis: 50%;
+			background-position: top;
+			background-size: cover;
+			background-image: url(../img/priceWall.jpg);
+
+			@include tablet {
+				content: none;
+			}
+		}
+	}
+
+	&__content {
+		flex-basis: 50%;
+
+		@include tablet {
+			flex-basis: 100%;
+		}
+	}
+
+	&__list {
+		margin-bottom: 62px;
+
+		@include tablet {
+			margin-bottom: 40px;
+		}
+		@include mobile {
+			margin-bottom: 24px;
+		}
+	}
+
+	&__item {
+		padding-bottom: 7px;
+		margin-bottom: 24px;
+		display: flex;
+		justify-content: space-between;
+		font-size: 14px;
+		line-height: 1;
+		border-bottom: 1px solid $second-color;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@include mobile {
+			padding-bottom: 6px;
+			margin-bottom: 16px;
+			font-size: 12px;
+			line-height: 1.2;
+		}
+	}
+
+	&__item-title {
+		text-transform: uppercase;
+	}
+
+	&__item-count {
+		white-space: nowrap;
+	}
+}

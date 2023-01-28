@@ -1,4 +1,21 @@
+@mixin laptop {
+	@media (max-width: 1024px) {
+		@content;
+	}
+}
+@mixin tablet {
+	@media (max-width: 768px) {
+		@content;
+	}
+}
+@mixin mobile {
+	@media (max-width: 560px) {
+		@content;
+	}
+}
 
-
-
-
+$bg-color: #241D1C;
+$main-color: #F6F3E3;
+$second-color: #BFBDB2;
+$third-color:  #EFE7BE;
+$white-color: #fff;

@@ -5,26 +5,37 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+<link rel="manifest" href="icon/site.webmanifest">
+<link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#241D1C">
+<meta name="apple-mobile-web-app-title" content="Chik chik">
+<meta name="application-name" content="Chik chik">
+<meta name="msapplication-TileColor" content="#241d1c">
+<meta name="theme-color" content="#241d1c">
 <title>Chik-chik - Барбершоп</title>
 
 </head>
 <body>
-	<header>
-		<div class="container">
-			<img class="header__logo" src="img/logo.svg" alt="Логотип барбершоп Chik-chik"/>
+	<header class="header">
+		<div class="container  ">
+			<div class="header__container">
+				<img class="header__logo" src="img/logo.svg" width="70" height="40" alt="Логотип барбершоп Chik-chik">
 
-			<nav class="header__navigation navigation">
-				<ul class="navigation__list">
-					<li class="navigation__item">
-						<a class="navigation__link" href="#price">Стоимость услуг</a>
-					</li>
-					<li class="navigation__item">
-						<a class="navigation__link" href="#about">О нас</a>
-					</li>
-				</ul>
-			</nav>
+				<nav class="header__navigation navigation">
+					<ul class="navigation__list">
+						<li class="navigation__item">
+							<a class="navigation__link" href="#price">Стоимость услуг</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#about">О нас</a>
+						</li>
+					</ul>
+				</nav>
 
-			<a class="header__link main-link" href="#reserve">Записаться</a>
+				<a class="header__link main-link" href="#reserve">Записаться</a>
+			</div>
 		</div>
 	</header>
 
@@ -40,32 +51,32 @@
 					<div class="slider__container">
 						<ul class="slider__list">
 							<li class="slider__item">
-								<img class="slider__img" src="img/photo01.jpg" alt="Фото модели мужчины"/>
+								<img class="slider__img" src="img/photo01.jpg" alt="Фото модели мужчины">
+							</li>
+							<li class="slider__item  slider__item_active">
+								<img class="slider__img" src="img/photo02.jpg" alt="Фото модели мужчины">
 							</li>
 							<li class="slider__item">
-								<img class="slider__img" src="img/photo02.jpg" alt="Фото модели мужчины"/>
+								<img class="slider__img" src="img/photo03.jpg" alt="Фото модели мужчины">
 							</li>
 							<li class="slider__item">
-								<img class="slider__img" src="img/photo03.jpg" alt="Фото модели мужчины"/>
+								<img class="slider__img" src="img/photo04.jpg" alt="Фото модели мужчины">
 							</li>
 							<li class="slider__item">
-								<img class="slider__img" src="img/photo04.jpg" alt="Фото модели мужчины"/>
+								<img class="slider__img" src="img/photo05.jpg" alt="Фото модели мужчины">
 							</li>
 							<li class="slider__item">
-								<img class="slider__img" src="img/photo05.jpg" alt="Фото модели мужчины"/>
+								<img class="slider__img" src="img/photo06.jpg" alt="Фото модели мужчины">
 							</li>
 							<li class="slider__item">
-								<img class="slider__img" src="img/photo06.jpg" alt="Фото модели мужчины"/>
+								<img class="slider__img" src="img/photo07.jpg" alt="Фото модели мужчины">
 							</li>
 							<li class="slider__item">
-								<img class="slider__img" src="img/photo07.jpg" alt="Фото модели мужчины"/>
-							</li>
-							<li class="slider__item">
-								<img class="slider__img" src="img/photo08.jpg" alt="Фото модели мужчины"/>
+								<img class="slider__img" src="img/photo08.jpg" alt="Фото модели мужчины">
 							</li>
 						</ul>
 						<button class="slider__arrow slider__arrow_left" aria-label="предыдущий слайд"></button>
-						<button class="slider__arrow slider__arrow_right" aria-label="слудеющий слайд"></button>
+						<button class="slider__arrow slider__arrow_right" aria-label="следующий слайд"></button>
 					</div>
 				</div>
 			</div>
@@ -79,42 +90,45 @@
 
 				<div class="price__wrapper-content">
 					<div class="price__content">
-					<ul class="price__list">
-						<li class="price__item">
-							<span class="price__item-title">Стрижка ножницами</span>
-							<span class="price__item-count">2500 руб</span>
-						</li>
-						<li class="price__item">
-							<span class="price__item-title">Стрижка машинкой</span>
-							<span class="price__item-count">2000 руб</span>
-						</li>
-						<li class="price__item">
-							<span class="price__item-title">Стрижка + стрижка бороды</span>
-							<span class="price__item-count">3000 руб</span>
-						</li>
-						<li class="price__item">
-							<span class="price__item-title">Стрижка + моделирование бороды</span>
-							<span class="price__item-count">4000 руб</span>
-						</li>
-						<li class="price__item">
-							<span class="price__item-title">Бритье головы</span>
+						<ul class="price__list">
+							<li class="price__item">
+							<span class="price__item-title">Мужская стрижка</span>
+							<span class="price__item-count">1200 руб</span>
+							</li>
+							<li class="price__item">
+							<span class="price__item-title">Детская стрижка</span>
+							<span class="price__item-count">900 руб</span>
+							</li>
+							<li class="price__item">
+							<span class="price__item-title">Моделирование бороды</span>
+							<span class="price__item-count">900 руб</span>
+							</li>
+							<li class="price__item">
+							<span class="price__item-title"
+								>Стрижка + коррекция бороды</span
+							>
+							<span class="price__item-count">1600 руб</span>
+							</li>
+							<li class="price__item">
+							<span class="price__item-title">Камуфляж</span>
+							<span class="price__item-count">800 руб</span>
+							</li>
+							<li class="price__item">
+							<span class="price__item-title"
+								>Моделирование бороды + камуфляж</span
+							>
 							<span class="price__item-count">1500 руб</span>
-						</li>
-						<li class="price__item">
-							<span class="price__item-title">Укладка</span>
-							<span class="price__item-count">1500 руб</span>
-						</li>
-						<li class="price__item">
-							<span class="price__item-title">Оформление бровей</span>
-							<span class="price__item-count">1000 руб</span>
-						</li>
-					</ul>
-
-					<a href="#reserve" class="price__link main-link">Записаться</a>
-					</div>
-				</div>
-			</div>
-		</section>
+							</li>
+							<li class="price__item">
+							<span class="price__item-title">Коррекция воском</span>
+							<span class="price__item-count">300 руб</span>
+							</li>
+						</ul>
+						<a class="price-content__link  main-link" href="#reserve" >Записаться</a>
+					</div><!-- /.price__content -->
+				</div><!-- /.price__wrapper-content -->
+			</div> <!-- /.container -->
+		</section> <!-- /.price -->
 
 		<section class="about" id="about">
 			<div class="container">
@@ -130,31 +144,31 @@
 					профиль, и мы уверены, что наши барберы делают это лучше всех.
 				</p>
 
-				<ul class="about__list">
-					<li class="about__item">
+				<ul class="about__list"> 
+					<li class="about__item  about__item_top"> 
 						<h3 class="about__item-title">Топ специалисты</h3>
 
 						<p class="about__item-description">
 							Мы подстрижем вас на высшем уровне
 						</p>
 					</li>
-					<li class="about__item">
+					<li class="about__item  about__item_master">
 						<h3 class="about__item-title">Мастера бород и усов</h3>
 
 						<p class="about__item-description">
-							Мы заботливо уложим вашу бороду и усы
+							Мы заботливо уложим вашу бороду и&nbsp;усы
 						</p>
 					</li>
-					<li class="about__item">
+					<li class="about__item  about__item_garant">
 						<h3 class="about__item-title">Гарантия качества</h3>
 
 						<p class="about__item-description">
 							Мы используем только профессиональные средства
 						</p>
 					</li>
-				</ul>
+				</ul> 
 			</div>
-		</section>
+		</section> <!--/.about-->
 
 		<section class="reserve" id="reserve">
 			<div class="container">
@@ -166,194 +180,211 @@
 					<li class="reserve__item">Выберите удобный день и время</li>
 				</ol>
 
-				<form action="" class="reserve__form">
+				<form class="reserve__form" action="#" method="post">  <!--?method-->
 					<div class="reserve__form-container">
-						<fieldset class="reserve__fieldset">
+						<fieldset class="reserve__fieldset reserve__fieldset_service" name="fieldservice">
 							<legend class="reserve__legend">Услуга</legend>
-
-							<label class="radio" for="">
-								<input class="radio__input" type="radio" name="service" />
-								<span class="radio__label">Стрижка ножницами</span>
+	
+							<label class="radio">
+								<input class="radio__input" type="radio" name="service">
+								<span class="radio__label">Мужская стрижка</span>
 							</label>
-
-							<label class="radio" for="">
-								<input class="radio__input" type="radio" name="service" />
-								<span class="radio__label">Стрижка машинкой</span>
+		
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="service">
+								<span class="radio__label">Детская стрижка</span>
 							</label>
-
-							<label class="radio" for="">
-								<input class="radio__input" type="radio" name="service" />
-								<span class="radio__label">Стрижка + стрижка бороды</span>
+		
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="service">
+								<span class="radio__label">Моделирование бороды</span>
 							</label>
-
-							<label class="radio" for="">
-								<input class="radio__input" type="radio" name="service" />
-								<span class="radio__label">Стрижка + моделирование бороды</span>
+		
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="service">
+								<span class="radio__label"
+									>Стрижка + коррекция бороды</span
+								>
 							</label>
-
-							<label class="radio" for="">
-								<input class="radio__input" type="radio" name="service" />
-								<span class="radio__label">Бритье головы</span>
+		
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="service">
+								<span class="radio__label">Камуфляж</span>
 							</label>
-
-							<label class="radio" for="">
-								<input class="radio__input" type="radio" name="service" />
-								<span class="radio__label">Укладка</span>
+		
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="service">
+								<span class="radio__label">Моделирование бороды + камуфляж</span>
 							</label>
-
-							<label class="radio" for="">
-								<input class="radio__input" type="radio" name="service" />
-								<span class="radio__label">Оформление бровей</span>
+		
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="service">
+								<span class="radio__label">Коррекция воском</span>
 							</label>
 						</fieldset>
-
-						<fieldset class="reserve__fieldset">
+	
+						<fieldset class="reserve__fieldset" name="fieldspec">
 							<legend class="reserve__legend">Специалист</legend>
-
-							<label class="radio" for="">
-								<input class="radio__input" type="radio" name="spec" />
-								<span class="radio__label radio__label_spec">Игорь</span>
+		
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="spec">
+								<span
+									class="radio__label radio__label_spec"
+									style="--bg-image: url(../img/spec1.png)"
+									>Игорь</span
+								>
 							</label>
-
-							<label class="radio" for="">
-								<input class="radio__input" type="radio" name="spec" />
-								<span class="radio__label radio__label_spec">Анатолий</span>
+		
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="spec">
+								<span
+									class="radio__label radio__label_spec"
+									style="--bg-image: url(../img/spec2.png)"
+									>Анатолий</span
+								>
 							</label>
-
-							<label class="radio" for="">
-								<input class="radio__input" type="radio" name="spec" />
-								<span class="radio__label radio__label_spec">Руслан</span>
+		
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="spec">
+								<span
+									class="radio__label radio__label_spec"
+									style="--bg-image: url(../img/spec3.png)"
+									>Руслан</span
+								>
 							</label>
-
-							<label class="radio" for="">
-								<input class="radio__input" type="radio" name="spec" />
-								<span class="radio__label radio__label_spec">Михаил</span>
+	
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="spec">
+								<span
+									class="radio__label radio__label_spec"
+									style="--bg-image: url(../img/spec4.png)"
+									>Михаил</span
+								>
 							</label>
-
-							<label class="radio" for="">
-								<input class="radio__input" type="radio" name="spec" />
-								<span class="radio__label radio__label_spec">Евгений</span>
+	
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="spec">
+								<span
+									class="radio__label radio__label_spec"
+									style="--bg-image: url(../img/spec5.png)"
+									>Евгений</span
+								>
 							</label>
 						</fieldset>
 
-						<fieldset class="reserve__fieldset">
+						<fieldset class="reserve__fieldset" name="fielddata">
 							<legend class="reserve__legend">Дата и время</legend>
-
-							<fieldset class="reserve__fieldset reserve__fieldset_sub">
-								<label class="radio" for="">
-								<input class="radio__input" type="radio" name="month" />
-								<span class="radio__label">Январь</span>
-								</label>
-
-								<label class="radio" for="">
-								<input class="radio__input" type="radio" name="month" />
-								<span class="radio__label">февраль</span>
-								</label>
-
-								<label class="radio" for="">
-								<input class="radio__input" type="radio" name="month" />
-								<span class="radio__label">Март</span>
-								</label>
-							</fieldset>
-
-							<fieldset class="reserve__fieldset reserve__fieldset_sub">
-								<label class="radio" for="">
-								<input class="radio__input" type="radio" name="day" />
-								<span class="radio__label">18 января</span>
-								</label>
-
-								<label class="radio" for="">
-								<input class="radio__input" type="radio" name="day" />
-								<span class="radio__label">19 января</span>
-								</label>
-
-								<label class="radio" for="">
-								<input class="radio__input" type="radio" name="day" />
-								<span class="radio__label">20 января</span>
-								</label>
-
-								<label class="radio" for="">
-								<input class="radio__input" type="radio" name="day" />
-								<span class="radio__label">21 января</span>
-								</label>
-							</fieldset>
-
-							<fieldset class="reserve__fieldset reserve__fieldset_sub">
-								<label class="radio" for="">
-								<input class="radio__input" type="radio" name="time" />
-								<span class="radio__label">10:00-11:30</span>
-								</label>
-
-								<label class="radio" for="">
-								<input class="radio__input" type="radio" name="time" />
-								<span class="radio__label">11:30-13:00</span>
-								</label>
-
-								<label class="radio" for="">
-								<input class="radio__input" type="radio" name="time" />
-								<span class="radio__label">13:00-14:30</span>
-								</label>
-
-								<label class="radio" for="">
-								<input class="radio__input" type="radio" name="time" />
-								<span class="radio__label">14:30-16:00</span>
-								</label>
-
-								<label class="radio" for="">
-								<input class="radio__input" type="radio" name="time" />
-								<span class="radio__label">16:00-17:30</span>
-								</label>
-
-								<label class="radio" for="">
-								<input class="radio__input" type="radio" name="time" />
-								<span class="radio__label">17:30-19:00</span>
-								</label>
-
-								<label class="radio" for="">
-								<input class="radio__input" type="radio" name="time" />
-								<span class="radio__label">19:00-20:30</span>
-								</label>
-							</fieldset>
 						</fieldset>
-					</div>
+						<fieldset class="reserve__fieldset reserve__fieldset_sub" name="fieldmonth">
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="month">
+								<span class="radio__label">Январь</span>
+							</label>
+	
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="month">
+								<span class="radio__label">февраль</span>
+							</label>
+	
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="month">
+								<span class="radio__label">Март</span>
+							</label>
+						</fieldset>
 
-					<button class="reserve__btn main-link">Записаться</button>
+						<fieldset class="reserve__fieldset reserve__fieldset_sub" name="fieldday">
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="day">
+								<span class="radio__label">18 января</span>
+							</label>
+	
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="day">
+								<span class="radio__label">19 января</span>
+							</label>
+	
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="day">
+								<span class="radio__label">20 января</span>
+							</label>
+	
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="day">
+								<span class="radio__label">21 января</span>
+							</label>
+						</fieldset>
+
+						<fieldset class="reserve__fieldset reserve__fieldset_sub" name="fieldtime">
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="time">
+								<span class="radio__label">10:00-11:30</span>
+							</label>
+	
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="time">
+								<span class="radio__label">11:30-13:00</span>
+							</label>
+	
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="time">
+								<span class="radio__label">13:00-14:30</span>
+							</label>
+	
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="time">
+								<span class="radio__label">14:30-16:00</span>
+							</label>
+	
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="time">
+								<span class="radio__label">16:00-17:30</span>
+							</label>
+	
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="time">
+								<span class="radio__label">17:30-19:00</span>
+							</label>
+	
+							<label class="radio" >
+								<input class="radio__input" type="radio" name="time">
+								<span class="radio__label">19:00-20:30</span>
+							</label>
+						</fieldset>
+					</div> <!--/.reserve__form-container-->
+
+					<button class="reserve__btn main-link" disabled>Записаться</button>
 				</form>
-			</div>
-		</section>
+			</div> <!-- /.container -->
+		</section> <!-- /.reserve -->
+		
 	</main>
 
 	<footer>
 		<div class="container">
-			<img class="header__logo" src="img/logo.svg" alt="Логотип барбершоп Chik-chik"/>
-			<nav class="footer__navigation navigation">
-				<ul class="navigation__list">
-					<li class="navigation__item">
-						<a class="navigation__link" href="#price">Стоимость услуг</a>
+			<div class="footer__container">
+				<img class="footer__logo" src="img/logo.svg" alt="Логотип барбершоп Chik-chik">
+				<div class="footer__navigation  navigation">
+					<ul class="navigation__list">
+						<li class="navigation__item">
+							<a class="navigation__link" href="#price">Стоимость услуг</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#about">О нас</a>
+						</li>
+					</ul>
+				</div>
+
+				<ul class="footer__developers">
+					<li class="footer__developer">
+						Designer: <a class="footer__developer_link" href="https://t.me/Mrshmallowww">Anastasia Ilina</a>
 					</li>
-					<li class="navigation__item">
-						<a class="navigation__link" href="#about">О нас</a>
+					<li class="footer__developer">
+						Developer: <a class="footer__developer_link" href="https://t.me/Khabibullin_Daniel">Khabibullin Daniel</a>
 					</li>
 				</ul>
-			</nav>
-
-			<ul class="footer-development__list">
-				<li class="footer-development__item">
-					Designer:
-					<a class="footer__link" href="https://t.me/Mrshmallowww"
-					>Anastasia Ilina</a
-					>
-				</li>
-				<li class="footer-development__item">
-					Developer:
-					<a class="footer__link" href="https://t.me/Khabibullin_Daniel">Khabibullin Daniel</a>
-				</li>
-			</ul>
-
-			<div class="footer__item footer__item_copyright footer-copyright">
-				<p>© chik chik, 2023</p>
-			</div>
-		</div>
+				<p class="footer__copyright">© chik chik, 2023</p>
+			</div><!-- /.footer__container -->
+		</div><!-- /.container -->
 	</footer>
 </body>
 </html>
