@@ -53,16 +53,16 @@
 		gap: 24px 32px;
 
 		@include laptop {
-			grid-template-columns: repeat(3, 1fr); //?? auto-fll
+			grid-template-columns: repeat(3, 1fr);
 			column-gap: 29px;
 		}
 
 		@include tablet {
-			grid-template-columns: repeat(auto-fit, 320px);//?? auto-fll
+			grid-template-columns: repeat(auto-fit, 320px);
 		}
 
 		@include mobile {	
-			grid-template-columns: repeat(auto-fit, 100%);//?? auto-fll
+			grid-template-columns: repeat(auto-fit, 100%);
 		}
 	}
 

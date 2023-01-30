@@ -106,4 +106,22 @@
 			margin-bottom: 16px;
 		}
 	}
+
+	&__success {
+		max-width: max-content;
+		padding: 16px 24px;
+		margin-top: 24px;
+
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 1.5;
+
+		border: 1px solid $second-color;
+		border-radius: 36px;
+
+		@include tablet {
+			padding: 12px 16px;
+			font-size: 16px;
+		}
+	}
 }

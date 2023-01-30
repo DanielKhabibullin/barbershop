@@ -77,7 +77,7 @@ const renderTime = (wrapper, data) => {
 export const initReserve = () => {
 	const reserveForm = document.querySelector('.reserve__form');
 	const {
-	fieldservice, //??
+	fieldservice,
 	fieldspec,
 	fielddata,
 	fieldmonth,
@@ -168,6 +168,7 @@ export const initReserve = () => {
 	]);
 
 	const p = document.createElement('p');
+	p.classList.add('reserve__success')
 	p.textContent = `
 		Спасибо за бронь #${data.id}!
 		Ждем Вас ${new Intl.DateTimeFormat('ru-RU', {
