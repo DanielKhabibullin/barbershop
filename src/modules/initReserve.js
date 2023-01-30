@@ -158,7 +158,7 @@ export const initReserve = () => {
 	const data = await response.json();
 
 	addDisabled([
-		fieldservice, // ??
+		fieldservice,
 		fieldspec,
 		fielddata,
 		fieldmonth,

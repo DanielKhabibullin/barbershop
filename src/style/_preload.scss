@@ -10,10 +10,10 @@
 		height: 56px;
 		top: calc(50% - 28px);
 		left: calc(50% - 28px);
-		border: 12px double #F6F3E3;
+		border: 12px double $main-color;
 		border-radius: 50%;
 		border-left-style: solid;
-		animation: rotate 0.5s infinite linear;
+		animation: rotate 0.6s infinite linear;
 	}
 }
 

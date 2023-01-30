@@ -1,0 +1,73 @@
+.radio {
+	//position: absolute;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	&__input {
+	display: none; // TODO classes focus, checked, disabled in scss, look down 
+	}
+
+	&__label {
+		display: inline-block;
+		padding: 16px 24px;
+
+		font-size: 14px;
+		line-height: 1;
+		text-transform: uppercase;
+
+		border: 1px solid $second-color;
+		border-radius: 36px;
+		cursor: pointer;
+	
+		@include tablet {
+			padding: 12px 16px;
+			font-size: 12px;
+		}
+
+		&:hover:not(:disabled) {
+			color: $third-color;
+		}
+
+		&_spec {
+			position: relative;
+			padding-left: 52px;
+
+			@include tablet {
+				padding-left: 40px;
+				background-position: 6px;
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				left: 8px;
+				top: 50%;
+				transform: translateY(-50%);
+				display: block;
+				width: 36px;
+				height: 36px;
+				border-radius: 50%;
+				background-image: var(--bg-image);
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+
+				@include tablet {
+					width: 24px;
+					height: 24px;
+				}
+			}
+		}
+	}
+}
+
+.radio__input:focus+.radio__label,
+.radio__input:checked+.radio__label {
+	color: $bg-color;
+	background-color: $main-color;
+	}
+
+.radio__input:disabled+.radio__label {
+	opacity: 0.4;
+}
