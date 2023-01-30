@@ -3,6 +3,5 @@
 - webpack
 - scss
 - responsive
-- crossbrowser
 - API
-- uploaded <a href="https://github.com/DanielKhabibullin/barbershop" target="_blank">here<a>
+- uploaded <a href="hhttps://barbershop-chik.vercel.app" target="_blank">here<a>
