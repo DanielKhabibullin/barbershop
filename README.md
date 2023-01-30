@@ -4,4 +4,4 @@
 - scss
 - responsive
 - API
-- uploaded <a href="hhttps://barbershop-chik.vercel.app" target="_blank">here<a>
+- uploaded <a href="https://barbershop-chik.vercel.app" target="_blank">here<a>
