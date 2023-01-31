@@ -175,9 +175,9 @@ export const initReserve = () => {
 		Ждем Вас ${new Intl.DateTimeFormat('ru-RU', {
 			month: 'long',
 			day: 'numeric',
-		}).format(new Date(2023, +month-1, day))},
+		}).format(new Date(2023, +data.month -1, data.day))},
 		Время ${data.time}
-	`;
+	`;  //`${data.month}/${data.day}`
 
 	reserveForm.append(p);
 	});
