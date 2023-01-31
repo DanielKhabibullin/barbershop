@@ -35,7 +35,8 @@ const renderMonth = (wrapper, data) => {
 	<input class="radio__input" type="radio" name="month" value="${month}">
 	<span class="radio__label">${new Intl.DateTimeFormat('ru-RU', {
 		month: 'long',
-	}).format(new Date(month))}</span>
+	}).format(new Date(2023, +month-1, 1))}</span>
+	
 	`;
 	return label;
 	});
@@ -52,7 +53,7 @@ const renderDay = (wrapper, data, month) => {
 	<span class="radio__label">${new Intl.DateTimeFormat('ru-RU', {
 		month: 'long',
 		day: 'numeric',
-	}).format(new Date(`${month}/${day}`))}</span>
+	}).format(new Date(2023, +month-1, 1))}</span>
 	`;
 	return label;
 	});
