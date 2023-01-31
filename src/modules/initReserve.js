@@ -175,7 +175,7 @@ export const initReserve = () => {
 		Ждем Вас ${new Intl.DateTimeFormat('ru-RU', {
 			month: 'long',
 			day: 'numeric',
-		}).format(new Date(`${data.month}/${data.day}`))},
+		}).format(new Date(2023, +month-1, day))},
 		Время ${data.time}
 	`;
 
