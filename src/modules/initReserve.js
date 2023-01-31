@@ -177,7 +177,7 @@ export const initReserve = () => {
 			day: 'numeric',
 		}).format(new Date(2023, +data.month -1, data.day))},
 		Время ${data.time}
-	`;  //`${data.month}/${data.day}`
+	`;
 
 	reserveForm.append(p);
 	});
