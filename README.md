@@ -3,6 +3,7 @@
 - webpack
 - scss
 - responsive
-- crossbrowser
 - API
-- uploaded <a href="https://github.com/DanielKhabibullin/barbershop" target="_blank">here<a>
+- sending orders to server
+- custom slider
+- uploaded <a href="https://barbershop-chik.vercel.app" target="_blank">here<a>
