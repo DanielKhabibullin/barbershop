@@ -53,7 +53,7 @@ const renderDay = (wrapper, data, month) => {
 	<span class="radio__label">${new Intl.DateTimeFormat('ru-RU', {
 		month: 'long',
 		day: 'numeric',
-	}).format(new Date(2023, +month-1, 1))}</span>
+	}).format(new Date(2023, +month-1, day))}</span>
 	`;
 	return label;
 	});
