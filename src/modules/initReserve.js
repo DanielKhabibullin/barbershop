@@ -1,6 +1,8 @@
 import { API_URL } from './const.js';
 import { addPreload, removePreload } from './util.js';
 
+const year = new Date().getFullYear();
+
 const addDisabled = (arr) => {
 	arr.forEach((elem) => {
 	elem.disabled = true;
@@ -35,7 +37,7 @@ const renderMonth = (wrapper, data) => {
 	<input class="radio__input" type="radio" name="month" value="${month}">
 	<span class="radio__label">${new Intl.DateTimeFormat('ru-RU', {
 		month: 'long',
-	}).format(new Date(2023, +month-1, 1))}</span>
+	}).format(new Date(year, +month-1, 1))}</span>
 	
 	`;
 	return label;
@@ -53,7 +55,7 @@ const renderDay = (wrapper, data, month) => {
 	<span class="radio__label">${new Intl.DateTimeFormat('ru-RU', {
 		month: 'long',
 		day: 'numeric',
-	}).format(new Date(2023, +month-1, day))}</span>
+	}).format(new Date(year, +month-1, day))}</span>
 	`;
 	return label;
 	});
@@ -175,7 +177,7 @@ export const initReserve = () => {
 		Ждем Вас ${new Intl.DateTimeFormat('ru-RU', {
 			month: 'long',
 			day: 'numeric',
-		}).format(new Date(2023, +data.month -1, data.day))},
+		}).format(new Date(year, +data.month -1, data.day))},
 		Время ${data.time}
 	`;
 
