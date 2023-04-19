@@ -1,4 +1,4 @@
-import { addPreload, removePreload } from './util.js';
+import {addPreload, removePreload} from './util.js';
 
 const startSlider = () => {
 	const sliderItems = document.querySelectorAll('.slider__item');
@@ -64,7 +64,7 @@ const startSlider = () => {
 		sliderList.style.transform = `translateX(${position}px`;
 		checkSlider();
 	});
-	};
+};
 
 export const initSlider = () => {
 	const slider = document.querySelector('.slider');

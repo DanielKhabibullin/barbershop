@@ -1,5 +1,5 @@
-import { API_URL } from './const.js';
-import { addPreload, removePreload } from './util.js';
+import {API_URL} from './const.js';
+import {addPreload, removePreload} from './util.js';
 
 const renderPrice = (wrapper, data) => {
 	data.forEach((item) => {
@@ -31,7 +31,8 @@ const renderService = (wrapper, data) => {
 
 export const initService = () => {
 	const priceList = document.querySelector('.price__list');
-	const renderFieldsetService = document.querySelector('.reserve__fieldset_service');
+	const renderFieldsetService = document.
+		querySelector('.reserve__fieldset_service');
 	priceList.textContent = '';
 	addPreload(priceList);
 
